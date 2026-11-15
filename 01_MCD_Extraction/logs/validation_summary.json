@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "images": 40,
+  "channels": 57,
+  "dtype": "float32",
+  "hpf": 50,
+  "steinbock": "0.16.3",
+  "laser_power_source": "user-provided",
+  "dimensions": [
+    [
+      1000,
+      1000
+    ]
+  ]
+}

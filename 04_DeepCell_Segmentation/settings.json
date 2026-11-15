@@ -1,0 +1,25 @@
+{
+  "deepcell": "0.12.10",
+  "tensorflow": "2.8.4",
+  "image_mpp": 1.0,
+  "normalization_percentiles": [
+    1,
+    99.8
+  ],
+  "channel_combination": "pixelwise maximum after independent normalization",
+  "nuclear_channels": [
+    "Ir191",
+    "Ir193"
+  ],
+  "cytoplasm_channels": [
+    "TH",
+    "p75NTR",
+    "Ret"
+  ],
+  "prediction_compartment": "both; only nuclear output retained",
+  "minimum_nuclear_area_um2": 50,
+  "cutoff": "strictly greater than",
+  "mask_semantics": "Nuclear regions used directly as whole-cell analysis masks; no expansion",
+  "dtype": "uint32",
+  "background": 0
+}

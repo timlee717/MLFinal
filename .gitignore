@@ -1,0 +1,24 @@
+# Raw quantitative IMC TIFFs (~217 MB each, 8.5 GB total) — too large for GitHub.
+# Keep them locally in 01_MCD_Extraction/img/.
+01_MCD_Extraction/img/
+*.tiff
+
+# macOS
+.DS_Store
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+.env
+
+# Large derived outputs
+*.npy
+*.npz
+*.h5
+*.h5ad
+*.zarr/
+*.tar.gz

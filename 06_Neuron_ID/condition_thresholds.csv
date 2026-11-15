@@ -1,0 +1,6 @@
+condition,source_roi,file,sha256,TH,Ret,p75NTR
+B,B_1_05,B_1_05_thresholds.json,dc3902c1b2120ce59c35a88248a735384fa1e8eac5a488f11ece3841616825f9,3.85,0.3,0.65
+CoN,CoN_1_02,CoN_1_02_thresholds.json,aa13a8701dbccd52a555b818dd23c82c38ee3382aa5c12f2bd23d4314f789ccc,3.4,0.5,0.65
+N,N_1_03,N_1_03_thresholds.json,444620719b6700fc427f6ee734984922220608b421756f0a2f8a38c6cea486aa,3.4,0.5,0.6
+nLnK,nLnK_1_03,nLnK_1_03_thresholds.json,fade23b593294a84235feb75e5a7e00afc2aa69b2a703ee5e4b42cd14e7078d9,3.35,0.5,1.15
+nLwK,nLwK_1_05,nLwK_1_05_thresholds.json,abedff56b7fd43d24804b24b2b5ec96895a81d4dcff47416a4305223b7df6673,3.5,0.5,1.5

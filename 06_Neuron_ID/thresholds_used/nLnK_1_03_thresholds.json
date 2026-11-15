@@ -1,0 +1,19 @@
+{
+  "cofactor": 1,
+  "rule": "all three selected markers >= per-ROI thresholds",
+  "selectedMarkers": [
+    "p75NTR",
+    "Ret",
+    "TH"
+  ],
+  "thresholds": {
+    "nLnK_1_03": {
+      "TH": 3.35,
+      "Tuj1": 0,
+      "TrkA": 0,
+      "p75NTR": 1.15,
+      "Ret": 0.5
+    }
+  },
+  "exportedAt": "2026-09-27T01:16:27.985Z"
+}
