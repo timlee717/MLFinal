@@ -1,0 +1,11 @@
+roi,treatment,split,n_neurons
+B_1_01,B,training,326
+B_1_02,B,training,335
+B_1_03,B,training,438
+B_1_04,B,reporting,321
+B_1_05,B,training,424
+N_1_01,N,training,273
+N_1_02,N,training,309
+N_1_03,N,training,327
+N_1_04,N,training,256
+N_1_05,N,reporting,351
