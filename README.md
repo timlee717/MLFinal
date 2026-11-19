@@ -55,7 +55,7 @@ Group of two, following the Individual Component rubric:
 
 | Member | Modeling task | Notebook |
 |---|---|---|
-| Name 1 | Student 1: penalized logistic regression (or SVM) AND random forest (or gradient boosting) — state which | `NOTEBOOKS/02_student1_<models>.ipynb` |
-| Name 2 | Student 2: neural network in PyTorch | `NOTEBOOKS/03_student2_pytorch_nn.ipynb` |
+| Nathan Myers | Student 1: penalized logistic regression (or SVM) AND random forest (or gradient boosting) — state which | `NOTEBOOKS/02_student1_<models>.ipynb` |
+| Timothy Lee | Student 2: neural network in PyTorch | `NOTEBOOKS/03_student2_pytorch_nn.ipynb` |
 
 Both members use the same `training_set.csv`, the same cross-validation folds (grouped by image) and the same primary metric (ROC-AUC) so the models can be compared fairly.
