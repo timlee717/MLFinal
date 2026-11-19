@@ -1,6 +1,6 @@
 # NGF or BDNF? Telling Two Growth Factors Apart from Single-Neuron Signaling Profiles
 
-DS 4021 final project. Group members: Name 1, Name 2.
+DS 4021 final project. Group members: Timothy Lee, Nathan Myers.
 
 **Research question:** Can machine-learning models tell apart rat sympathetic neurons stimulated for 30 minutes with NGF from those stimulated with BDNF using only their single-cell signaling profiles?
 
