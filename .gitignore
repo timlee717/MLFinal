@@ -1,7 +1,10 @@
-# Raw quantitative IMC TIFFs (~217 MB each, 8.5 GB total) — too large for GitHub.
-# Keep them locally in 01_MCD_Extraction/img/.
-01_MCD_Extraction/img/
+# Raw quantitative IMC TIFFs (~217 MB each, ~8.5 GB total) — too large for GitHub.
+# Keep a local copy in Data/raw/images/ (see README).
+Data/raw/images/
 *.tiff
+
+# Local-only files not used for this project
+_archive/
 
 # macOS
 .DS_Store

@@ -1,5 +1,13 @@
 # Rat SCG imaging mass cytometry handoff
 
+> **Repo layout (MLFinal, option 2):** this repo was reorganized for the NGF-vs-BDNF project. The paths below come from the original lab handoff. In this repo they live at:
+> `01_MCD_Extraction/img/` → `Data/raw/images/` (local only, gitignored) ·
+> `01_MCD_Extraction/metadata/{fov_annotation,panel}.csv` → `Data/raw/metadata/` ·
+> `04_DeepCell_Segmentation/manifest.csv` → `Data/raw/metadata/manifest.csv` ·
+> `04_DeepCell_Segmentation/masks/` → `Data/raw/masks/` ·
+> `06_Neuron_ID/{cell_neuron_assignments,condition_thresholds}.csv` → `Data/raw/neuron_labels/`.
+> Files not used for option 2 (`images.csv`, `acquired_channels.csv`, `settings.json`, `thresholds_used/`, the staining `.xlsx`, extraction logs) were removed from the repo; they remain in git history.
+
 This is an exploratory analysis of a September 8, 2026 imaging mass cytometry (IMC) experiment on mass cultures of wild-type rat superior cervical ganglion (SCG) cells. The cultures contain sympathetic neurons and other cells. The goal is to use the quantitative images and existing masks to build your own analysis of how signaling varies with trophic-factor deprivation, KCl, and acute NGF or BDNF exposure.
 
 ## Experiment and comparisons
