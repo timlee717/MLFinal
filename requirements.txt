@@ -1,0 +1,21 @@
+# DS 4021 final project: NGF vs BDNF
+# Tested with Python 3.13 (Anaconda). Install with:  pip install -r requirements.txt
+# Minimum versions below are the first releases that support Python 3.13.
+
+# Notebooks
+jupyterlab>=4.0
+
+# Data and modeling (all notebooks)
+numpy>=2.1
+pandas>=2.2.3
+scikit-learn>=1.5.2
+matplotlib>=3.9
+seaborn>=0.13.2
+
+# Neural network notebook (Student 2)
+torch>=2.5
+
+# Only needed to rebuild the CSVs from the raw images (scripts/build_cell_table.py)
+tifffile>=2024.8
+scipy>=1.14.1
+scikit-image>=0.25
