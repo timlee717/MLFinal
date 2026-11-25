@@ -4,7 +4,47 @@ DS 4021 final project. Group members: Timothy Lee, Nathan Myers.
 
 **Research question:** Can machine-learning models tell apart rat sympathetic neurons stimulated for 30 minutes with NGF from those stimulated with BDNF using their single-cell signaling profiles?
 
-The data come from an unpublished imaging mass cytometry (IMC) experiment on cultured rat superior cervical ganglion (SCG) cells. This project uses two of the experiment's five treatments: 30-minute NGF (`N`) and 30-minute BDNF (`B`). See [CLAUDE.md](CLAUDE.md) for the full experiment, marker panel and data notes.
+**Why this matters:** Sympathetic neurons control involuntary body functions such as heart rate and blood pressure, and during development they depend on NGF to survive. NGF keeps them alive through its receptor TrkA. BDNF cannot activate the Trk receptors on these neurons. Instead, it acts through the p75NTR receptor and can trigger cell death [1]. Neurons that receive strong NGF signals even release BDNF that kills weaker neighbors [2]. This competition decides how many neurons survive and how well each organ is connected to the nervous system. If a model can tell NGF-treated from BDNF-treated neurons using signaling measured only 30 minutes after exposure, the "survive" and "die" signals already differ in individual cells long before any cell dies. The markers that drive the separation point to where the two pathways diverge. (This dataset does not measure survival itself, only early signaling.)
+
+[1] S. X. Bamji *et al.*, "The p75 neurotrophin receptor mediates neuronal apoptosis and is essential for naturally occurring sympathetic neuron death," *J. Cell Biol.*, vol. 140, no. 4, pp. 911–923, 1998. [doi:10.1083/jcb.140.4.911](https://doi.org/10.1083/jcb.140.4.911)
+
+[2] C. D. Deppmann *et al.*, "A model for neuronal competition during development," *Science*, vol. 320, no. 5874, pp. 369–373, 2008. [doi:10.1126/science.1152677](https://doi.org/10.1126/science.1152677)
+
+The data come from an unpublished imaging mass cytometry (IMC) experiment on cultured rat superior cervical ganglion (SCG) cells. This project uses two of the experiment's five treatments: 30-minute nerve growth factor (NGF, `N`) and 30-minute brain-derived neurotrophic factor (BDNF, `B`). See [CLAUDE.md](CLAUDE.md) for the full experiment, marker panel and data notes.
+
+## Abbreviations
+
+**Project and methods**
+
+| Abbreviation | Meaning |
+|---|---|
+| NGF | Nerve growth factor |
+| BDNF | Brain-derived neurotrophic factor |
+| IMC | Imaging mass cytometry: antibodies tagged with metal isotopes are imaged by laser ablation and mass spectrometry, giving one intensity image per marker |
+| SCG | Superior cervical ganglion, the source of the sympathetic neurons |
+| ROI | Region of interest: one 1 mm × 1 mm image. Used here as "image" |
+| KCl | Potassium chloride, added to the deprivation medium |
+| CV | Cross-validation |
+| ROC-AUC | Area under the receiver operating characteristic curve |
+
+**Markers used as features** (a `p-` prefix means the phosphorylated, activated form of the protein)
+
+| Abbreviation | Meaning |
+|---|---|
+| Tuj1 | Antibody against neuron-specific βIII-tubulin |
+| TrkA | Tropomyosin receptor kinase A, the main NGF receptor |
+| p-Tyr | Phosphotyrosine (broad tyrosine-phosphorylation readout) |
+| p-Akt S473 / T308 | Akt kinase phosphorylated at serine 473 / threonine 308 |
+| p-PLCγ2 | Phospholipase C gamma 2 |
+| p-S6 | Ribosomal protein S6 |
+| p-CREB | cAMP response element-binding protein |
+| p-NFκB | Nuclear factor kappa B |
+| p-ATM | Ataxia telangiectasia mutated kinase |
+| c-Fos | Protein from an immediate early gene, a marker of recent cell activation |
+| H3K9ac | Histone H3 acetylated at lysine 9 |
+| Ir191 | Iridium-191 DNA stain (marks the nucleus) |
+
+Markers excluded from the features (TH = tyrosine hydroxylase, p75NTR = p75 neurotrophin receptor, Ret = "rearranged during transfection" receptor, p-c-Jun, cleaved caspase-3) are explained under Datasets below.
 
 ## Repository contents
 
